@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .bloco1, .bloco2, .bloco3 {
+            display: inline-block;
+            height: 200px;
+            width: 300px;
+        }
+        .bloco1{
+            background-color: rgb(216, 38, 38);
+            z-index: 11;
+        }
+        .bloco2 {
+            background-color: rgb(9, 240, 9);
+            opacity: 0.9;
+            position: fixed; /*define a posicao do elemento. Pode ser static, relative, absolut ou fixed. */
+            top: 10px;
+            left: 300px;
+            z-index: 12; 
+        }
+        .bloco3 {
+            background-color: rgb(11, 15, 233);
+            position: fixed;
+            z-index: 1;
+        }
+        img {
+            height: 200px;
+            width: auto;
+            float: left; /* como o elemento se comporta comparado a outros elementos próximos */
+        }
+        .paragrafo-baixo {
+            clear:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco1">
+        Bloco 1
+    </div>
+    <div class="bloco2">
+        Bloco 2
+    </div>
+    <div class="bloco3">
+        Bloco 
+    </div>
+    <br>
+    <img src="cadillac.webp" alt="foto-carro">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem possimus quia doloremque deserunt. Necessitatibus consequuntur sint architecto odit cumque aliquam minus recusandae, harum voluptatem ratione hic, eaque vitae veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem possimus quia doloremque deserunt. Necessitatibus consequuntur sint architecto odit cumque aliquam minus recusandae, harum voluptatem ratione hic, eaque vitae veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem possimus quia doloremque deserunt. Necessitatibus consequuntur sint architecto odit cumque aliquam minus recusandae, harum voluptatem ratione hic, eaque vitae veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem possimus quia doloremque deserunt. Necessitatibus consequuntur sint architecto odit cumque aliquam minus recusandae, harum voluptatem ratione hic, eaque vitae veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem possimus quia doloremque deserunt. Necessitatibus consequuntur sint architecto odit cumque aliquam minus recusandae, harum voluptatem ratione hic, eaque vitae veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem possimus quia doloremque deserunt. Necessitatibus consequuntur sint architecto odit cumque aliquam minus recusandae, harum voluptatem ratione hic, eaque vitae veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem possimus quia doloremque deserunt. Necessitatibus consequuntur sint architecto odit cumque aliquam minus recusandae, harum voluptatem ratione hic, eaque vitae veniam?</p>
+    <p class=".paragrafo-baixo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem possimus quia doloremque deserunt. Necessitatibus consequuntur sint architecto odit cumque aliquam minus recusandae, harum voluptatem ratione hic, eaque vitae veniam?</p>
+</body>
+</html>

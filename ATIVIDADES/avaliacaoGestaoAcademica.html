@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Acadêmica</title>
+    <style>
+        fieldset {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1px;
+            margin: 0px 480px 0px 500px;
+        }
+        h1 {
+            font-size: small; background-color: rgb(199, 158, 24); font-weight: 300;
+            padding: 2px 2px 2px 10px;
+            margin-top: 2px;
+        }
+        h2 {
+            font-size: small;
+            padding: 0px 0px 0px 10px;
+            margin-top: 0px;
+            border: 0px;
+        }
+        table {
+            padding: 2px 2px 2px 10px;
+        }
+        label {
+            padding: 2px 50px 2px 2px;
+            font-weight: bold;
+            font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+        }
+        #button-cadastrar {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>SISTEMA DE GESTÃO ACADÊMICA</h1>
+        <h2 >MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+        <table>
+        <tr>
+            <td><label for="">Login</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="">Senha</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="">Status</label></td>
+            <td><select name="" id="">
+                <option value="">Inativo</option>
+                <option value="">Ativo</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="">Tipo</label></td>
+            <td>
+                <input type="radio">Técnico
+                <input type="radio">Professor
+                <input type="radio">Aluno
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Data Criação</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="">Perfil</label></td>
+            <td>
+                <input type="radio">Convidado
+                <input type="radio">Administrador
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2"><label for="">Observações</label></td>
+            <td><textarea name="comentario-usuario" id="comentario-usuario"></textarea></td>
+        </tr>
+        <tr></tr>
+        <tr rowspan="2">
+            <td rowspan="2"><label for="">Módulos</label></td>
+            <td style="padding: 2px 0px 10px 0px">
+                <input type="checkbox">Compras
+                <input type="checkbox">Biblioteca
+                <input type="checkbox">Acadêmico
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px 0px 10px 0px">
+                <input type="checkbox">Documentação
+                <input type="checkbox">Recursos Humanos
+            </td>
+        </tr>
+            
+
+        </table>
+        <button id="button-cadastrar">Cadastrar</button>
+        <button>Excluir</button>
+    </fieldset>
+    <form action=""></form>
+</body>
+</html>

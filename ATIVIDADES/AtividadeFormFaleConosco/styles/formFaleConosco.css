@@ -1,0 +1,46 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 15px;
+    border: 2px solid green; 
+    background: linear-gradient(to bottom, #e6ffe6, #ccffcc); /* fundo degradê verde claro */
+}
+
+legend {
+    background-color: pink;
+    color: darkred;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid green;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input, textarea {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 95%;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 10px;
+    align-self: flex-start;
+    padding: 5px 10px;
+}
