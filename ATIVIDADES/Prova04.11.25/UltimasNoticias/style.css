@@ -1,0 +1,35 @@
+img {
+    width: 200px;
+    height: auto;
+}
+
+.principal-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    border-bottom: 1px;
+    border-color: grey;
+}
+
+.items-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.resultados {
+    font-weight: 500;
+}
+
+#qtd-noticias {
+    font-style: italic;
+    color: blue;
+    font-weight: 500;
+}
